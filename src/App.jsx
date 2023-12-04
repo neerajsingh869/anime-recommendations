@@ -146,20 +146,21 @@ function Main({ animeGenreState, genreBtnClickHandler }) {
       <section id="anime-genres">
         { animeGenres.map(genre => {
           return (
-            <button 
+            <div 
               key={ genre }
-              className="anime-genre-btn"
-              id={genre + "-btn"}
+              className="anime-genre"
+              id={ genre }
               onClick={ genreBtnClickHandler }
             >
               <div className="bg"></div>
-              { genre }
-            </button>
+              <button className="anime-genre-btn">{ genre }</button>
+            </div>
           )
         }) }
       </section>
       <section id="anime-cards">
         { animeRecommendations[animeGenreState].map(anime => {
+          console.log("hello");
           return (
             <AnimeCard key={ anime.name } anime={ anime }/>
           )
@@ -174,7 +175,7 @@ function App() {
 
   const handleGenreBtnClick = (e) => {
     e.preventDefault();
-
+    console.log(e.target);
     const genre = e.target.textContent.trim();
     setAnimeGenre(genre);
   }
