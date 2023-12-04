@@ -24,8 +24,7 @@ header h1 {
   margin-bottom: 2rem;
 }
 
-/* Anime genre buttons */
-
+/* Anime genre container and buttons */
 .anime-genre {
   display: inline-block;
   width: 10rem;
@@ -95,6 +94,7 @@ header h1 {
 .anime-card {
   margin: 2rem 0rem;
   padding: 0.5rem;
+  text-align: justify;
 }
 
 .anime-name {

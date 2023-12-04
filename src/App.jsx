@@ -160,7 +160,6 @@ function Main({ animeGenreState, genreBtnClickHandler }) {
       </section>
       <section id="anime-cards">
         { animeRecommendations[animeGenreState].map(anime => {
-          console.log("hello");
           return (
             <AnimeCard key={ anime.name } anime={ anime }/>
           )
@@ -175,7 +174,7 @@ function App() {
 
   const handleGenreBtnClick = (e) => {
     e.preventDefault();
-    console.log(e.target);
+    
     const genre = e.target.textContent.trim();
     setAnimeGenre(genre);
   }
