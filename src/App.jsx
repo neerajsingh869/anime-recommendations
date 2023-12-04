@@ -140,14 +140,15 @@ function AnimeCard({ anime }) {
   )
 }
 
-function Main({ animeGenreState }) {
+function Main({ animeGenreState, genreBtnClickHandler }) {
   return (
     <main>
       <section>
         { animeGenres.map(genre => {
           return (
             <button 
-            key={ genre }
+              key={ genre }
+              onClick={ genreBtnClickHandler }
             >
               { genre }
             </button>
@@ -168,11 +169,20 @@ function Main({ animeGenreState }) {
 function App() {
   let [ animeGenre, setAnimeGenre ] = useState('action');
 
+  const handleGenreBtnClick = (e) => {
+    e.preventDefault();
+
+    const genre = e.target.textContent.trim();
+    setAnimeGenre(genre);
+  }
+
   return (
     <>
       <div>
         <Header />
-        <Main animeGenreState={ animeGenre } />
+        <Main 
+          animeGenreState={ animeGenre } 
+          genreBtnClickHandler={ handleGenreBtnClick }/>
       </div>
     </>
   )
