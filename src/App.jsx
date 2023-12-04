@@ -178,7 +178,7 @@ function App() {
 
   return (
     <>
-      <div>
+      <div className="app">
         <Header />
         <Main 
           animeGenreState={ animeGenre } 

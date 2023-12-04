@@ -6,3 +6,9 @@
   margin-left: 0;
   margin-right: 0;
 }
+
+/* App component */
+.app {
+  max-width: 80%;
+  margin: auto;
+}
