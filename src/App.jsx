@@ -126,14 +126,14 @@ function Header() {
 
 function AnimeCard({ anime }) {
   return (
-    <div>
-      <div>
+    <div className="anime-card">
+      <div className="anime-name">
         { anime.name }
       </div>
-      <div>
+      <div className="anime-description">
         { anime.description }
       </div>
-      <div>
+      <div className="anime-rating">
         { anime.rating }
       </div>
     </div>
@@ -158,7 +158,7 @@ function Main({ animeGenreState, genreBtnClickHandler }) {
           )
         }) }
       </section>
-      <section>
+      <section id="anime-cards">
         { animeRecommendations[animeGenreState].map(anime => {
           return (
             <AnimeCard key={ anime.name } anime={ anime }/>

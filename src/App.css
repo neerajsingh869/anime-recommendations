@@ -76,3 +76,31 @@ header h1 {
 #fantasy-btn div {
   background-image: url('./assets/anime-fantasy.jpeg');
 }
+
+/* AnimeCard component */
+#anime-cards {
+  padding: 0rem 8rem;
+}
+
+.anime-card > div:not(:last-child) {
+  margin-bottom: 0.4rem;
+}
+
+.anime-card {
+  margin: 2rem 0rem;
+  padding: 0.5rem;
+}
+
+.anime-name {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.anime-description {
+  font-size: 1.05rem;
+}
+
+.anime-rating {
+  color: lightcoral;
+  font-size: 0.8rem;
+}
