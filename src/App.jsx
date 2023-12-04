@@ -124,12 +124,51 @@ function Header() {
   )
 }
 
+function Main({ animeGenreState }) {
+  return (
+    <main>
+      <section>
+        { animeGenres.map(genre => {
+          return (
+            <button 
+            key={ genre }
+            >
+              { genre }
+            </button>
+          )
+        }) }
+      </section>
+      <section>
+        { animeRecommendations[animeGenreState].map(anime => {
+          return (
+            <div 
+              key={ anime.name }
+            >
+              <div>
+                { anime.name }
+              </div>
+              <div>
+                { anime.description }
+              </div>
+              <div>
+                { anime.rating }
+              </div>
+            </div>
+          )
+        }) }
+      </section>
+    </main>
+  )
+}
+
 function App() {
+  let [ animeGenre, setAnimeGenre ] = useState('action');
 
   return (
     <>
       <div>
         <Header />
+        <Main animeGenreState={ animeGenre } />
       </div>
     </>
   )
