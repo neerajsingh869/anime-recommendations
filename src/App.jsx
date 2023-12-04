@@ -143,13 +143,16 @@ function AnimeCard({ anime }) {
 function Main({ animeGenreState, genreBtnClickHandler }) {
   return (
     <main>
-      <section>
+      <section id="anime-genres">
         { animeGenres.map(genre => {
           return (
             <button 
               key={ genre }
+              className="anime-genre-btn"
+              id={genre + "-btn"}
               onClick={ genreBtnClickHandler }
             >
+              <div className="bg"></div>
               { genre }
             </button>
           )
