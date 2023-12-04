@@ -12,3 +12,8 @@
   max-width: 80%;
   margin: auto;
 }
+
+/* Header component */
+header h1 {
+  text-align: center;
+}
