@@ -114,6 +114,8 @@ const animeRecommendations = {
   ]
 };
 
+let animeGenres = Object.keys(animeRecommendations);
+
 function App() {
 
   return (
