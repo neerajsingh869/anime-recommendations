@@ -119,7 +119,7 @@ let animeGenres = Object.keys(animeRecommendations);
 function Header() {
   return (
     <header>
-      <h1>My Anime Recommendations</h1>
+      <h1>my anime recommendations</h1>
     </header>
   )
 }
@@ -174,7 +174,7 @@ function App() {
 
   const handleGenreBtnClick = (e) => {
     e.preventDefault();
-    
+
     const genre = e.target.textContent.trim();
     setAnimeGenre(genre);
   }
