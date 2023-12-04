@@ -1,1 +1,1 @@
-#### Checkout my [anime recommendations](https://anime-recommendations869.netlify.app/) app to get short my anime recommendations
+#### Checkout my [anime recommendations](https://anime-recommendations869.netlify.app/) app to get anime recommendations
