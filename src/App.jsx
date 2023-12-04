@@ -116,11 +116,21 @@ const animeRecommendations = {
 
 let animeGenres = Object.keys(animeRecommendations);
 
+function Header() {
+  return (
+    <header>
+      <h1>My Anime Recommendations</h1>
+    </header>
+  )
+}
+
 function App() {
 
   return (
     <>
-      
+      <div>
+        <Header />
+      </div>
     </>
   )
 }
